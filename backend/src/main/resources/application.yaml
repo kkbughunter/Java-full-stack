@@ -2,6 +2,13 @@ spring:
   application:
     name: backend
   
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: -1 # 10MB
+      max-request-size: -1 # 50MB
+      file-size-threshold: -1 # 1MB
+
   profiles:
     active: dev
 
